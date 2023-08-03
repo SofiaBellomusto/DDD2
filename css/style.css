@@ -65,6 +65,7 @@ nav ul li {
 
 h2 {
     margin-top: 140px;
+    margin-bottom: 20px;
     font-size: 50px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
@@ -162,7 +163,6 @@ ol {
     height: 370px;
     display:flex;
     justify-content: space-between;
-
 }
 
 .fototips img {
@@ -171,7 +171,7 @@ ol {
 }
 
 .fototips p {
-    font-size: 30px;
+    font-size: 25px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -195,47 +195,6 @@ ol {
     justify-content: space-between;
 }
 
-.parent {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 0.5fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    margin-top: 98px;
-    }
-    
-.div1 { grid-area: 1 / 3 / 3 / 5;
-    padding-top: 50px; }
-
-.div1 input {
-    width: 80%;
-    height: 25px;
-    margin: 3px;
-}
-
-.div1 button {
-    background: pink;
-    color: rgb(177, 45, 67);
-    border: none;
-    font-family: sans-serif;
-    padding: 0.25rem 2rem;
-}
-
-.div2 { grid-area: 1 / 1 / 2 / 2; }
-
-.div2 p {
-    font-size: 30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.div3 { grid-area: 1 / 2 / 2 / 3; }
-
-.div3 img {
-    width: 100%;
-}
-
-.div4 { grid-area: 2 / 1 / 3 / 3; }
-
 .tresfotos {
     height: 240px;
     display:flex;
@@ -243,6 +202,7 @@ ol {
     width: 100%;
     object-fit: cover
 }
+
 
 h4 {
     font-size: 20px;
@@ -257,6 +217,57 @@ h4 {
     width: 100%;
     object-fit: cover
 }
+
+@media only screen and (min-width: 670px) {
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 0.5fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        margin-top: 98px;
+        }
+        
+    .div1 { grid-area: 1 / 3 / 3 / 5;
+        padding-top: 45px;
+        margin-left: 10px;
+    }
+
+    .div1 input {
+        width: 80%;
+        height: 25px;
+        margin: 3px;
+    }
+    
+    .div1 button {
+        background: pink;
+        color: rgb(177, 45, 67);
+        border: none;
+        font-family: sans-serif;
+        padding: 0.25rem 2rem;
+    }
+    
+    .div2 { grid-area: 1 / 1 / 2 / 2; }
+    
+    .div2 p {
+        margin-top: 15px;
+        font-size: 25px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .div3 { grid-area: 1 / 2 / 2 / 3; }
+    
+    .div3 img {
+        margin-top: 15px;
+        width: 100%;
+    }
+    
+    .div4 { grid-area: 2 / 1 / 3 / 3; }
+
+    .contactmobile {
+        display: none;
+    }
+} 
 
 @media only screen and (max-width: 670px) {
     .nav-link-DDD2 {
@@ -388,5 +399,50 @@ h4 {
 
     .footer div {
         margin-bottom: 10px;
+    }
+
+    .div1 {
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .div2 {
+        display: none;
+    }
+
+    .div3 img {
+        max-width: 100vw;
+    }
+
+    .div4 {
+        display: none;
+    }
+
+    .tresfotos {
+        display: none;
+    }
+
+    .fototips {
+        height: 200px;
+    }
+
+    .fototips img {
+        max-width: 50vw;
+        max-height: 200px;
+    }
+
+    .fototips p {
+        font-size: 15px;
+    }
+
+    .contactmobile {
+        margin-top: 200px;
+    }
+
+    .contactmobile p {
+        color: #191919;
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
     }
 }
