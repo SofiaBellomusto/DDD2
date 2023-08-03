@@ -64,7 +64,7 @@ nav ul li {
 }
 
 h2 {
-    margin-top: 90px;
+    margin-top: 140px;
     font-size: 50px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
@@ -275,6 +275,14 @@ h4 {
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         font-size: 12px;
         text-align: center;
+    }
+
+    nav ul li {
+        max-width: 25vw;
+    }
+
+    .carousel {
+        margin-bottom: 10px;
     }
 
     .carousel-inner {
