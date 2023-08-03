@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    
     <title>DDD2</title>
 </head>
 
@@ -13,11 +15,11 @@
         <!--nav = menu de navegacion-->
         <nav>
             <a href="index.html" class="nav-link-DDD2">DDD2</a>
-            <ul>
-                <li><a href="pages/spademanos.html" class="nav-link">SPA DE MANOS</a></li>
-                <li><a href="pages/acrilicos.html" class="nav-link">ACRILICOS</a></li>
-                <li><a href="pages/tips.html" class="nav-link">TIPS</a></li>
-                <li><a href="pages/contacto.html" class="nav-link">CONTACTO</a></li>
+            <ul class="list-inline">
+                <li class="inline-block"><a href="pages/spademanos.html" class="nav-link">SPA DE MANOS</a></li>
+                <li class="inline-block"><a href="pages/acrilicos.html" class="nav-link">ACRILICOS</a></li>
+                <li class="inline-block"><a href="pages/tips.html" class="nav-link">TIPS</a></li>
+                <li class="inline-block"><a href="pages/contacto.html" class="nav-link">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
@@ -25,9 +27,32 @@
     <!--main = contenido principal-->
     <main>
         <section>
-            <img src="Images/Spademanos.jpg" alt="spa de manos" class="large_img">
-            <img src="Images/uñas_acrilicas3.jpg" alt="uñas acrilicas" class="imagen_pegada">
-            <img src="Images/Uñas_acrilicas_extravagantes2.jpg" alt="uñas acrilicas extra" class="imagen_pegada">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="Images/Spademanos.jpg" class="d-block w-80" alt="spa de manos">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Images/uñas_acrilicas3.jpg" class="d-block w-80" alt="uñas acrilicas">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Images/Uñas_acrilicas_extravagantes2.jpg" class="d-block w-80" alt="uñas acrilicas extra">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </section>
     </main>
 
@@ -38,7 +63,8 @@
         </div>
         <div>
             <h4>SOBRE NOSOTROS</h4>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia deleniti sit error voluptatibus? Consequuntur voluptatum id, expedita nihil, dolorem veniam quibusdam, similique placeat non natus quos ducimus? Libero consequatur aliquid minima eum, quaerat deleniti omnis in repudiandae velit dolore provident.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem recusandae eligendi possimus sapiente voluptatem vitae necessitatibus animi ipsam autem amet.</p>
+            <br>
             <h4>POLITICA DE PRIVACIDAD</h4>
             <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sequi nisi alias facere inventore quo omnis impedit fugiat modi reprehenderit id neque eligendi et, incidunt excepturi ea dolorum veniam ratione.</P>
             <h4>1717 Harrison St, San Francisco, CA 94103, USA
@@ -53,4 +79,5 @@
     </footer>
 
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </html>
