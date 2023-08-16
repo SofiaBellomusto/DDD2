@@ -104,6 +104,7 @@ h2 {
 .tarjetita p {
     font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
 }
 
 h3 {
@@ -221,10 +222,11 @@ h4 {
 }
 
 .footer p {
-    font-size: 16px;
+    font-size: 12px;
     font-family: 'Times New Roman', Times, serif;
     color: #000000;
     line-height: normal;
+    text-align: center;
 }
 
 @media only screen and (min-width: 670px) {
@@ -344,6 +346,7 @@ h4 {
         text-align: center;
         justify-content: center;
         font-size: 12px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 
     .contenedor {
@@ -409,6 +412,10 @@ h4 {
 
     .footer div {
         margin-bottom: 10px;
+    }
+
+    .footer p {
+        margin-bottom: 0px;
     }
 
     .formulario {
