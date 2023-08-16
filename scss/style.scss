@@ -77,11 +77,6 @@
     width: 100%;
     position: relative;
   
-    div {
-      text-align: right;
-      padding: 10px;
-    }
-  
     img {
       position: absolute;
       width: 100%;
@@ -92,6 +87,8 @@
     }
   
     div {
+      text-align: right;
+      padding: 10px;
       position: relative;
       display: inline-block;
       z-index: 13;
@@ -211,10 +208,6 @@
     justify-content: space-between;
     width: 100%;
     object-fit: cover;
-  
-    div p {
-      font-size: 5px;
-    }
   }
   
   @media only screen and (min-width: 670px) {
@@ -380,7 +373,7 @@
     }
   
     h4 {
-      font-size: 9px;
+      font-size: 12px;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       text-align: center;
     }
