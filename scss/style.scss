@@ -211,6 +211,10 @@
     justify-content: space-between;
     width: 100%;
     object-fit: cover;
+  
+    div p {
+      font-size: 5px;
+    }
   }
   
   @media only screen and (min-width: 670px) {
@@ -223,7 +227,7 @@
       margin-top: 98px;
     }
   
-    .div1 {
+    .formulario {
       grid-area: 1 / 3 / 3 / 5;
       padding-top: 45px;
       margin-left: 10px;
@@ -243,7 +247,7 @@
       }
     }
   
-    .div2 {
+    .adress {
       grid-area: 1 / 1 / 2 / 2;
   
       p {
@@ -253,7 +257,7 @@
       }
     }
   
-    .div3 {
+    .salonimg {
       grid-area: 1 / 2 / 2 / 3;
   
       img {
@@ -262,7 +266,7 @@
       }
     }
   
-    .div4 {
+    .mapacontact {
       grid-area: 2 / 1 / 3 / 3;
     }
   
@@ -348,17 +352,24 @@
   
     .calendar {
       width: 50vw;
+
+      p {
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      input {
+        width: 80%;
+        height: 20px;
+        margin: 3px;
+        font-size: 7px;
+      }
     }
   
     .columnafea {
       display: none;
-    }
-  
-    .calendar p {
-      font-size: 15px;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      font-weight: bold;
-      margin-bottom: 5px;
     }
   
     ol {
@@ -368,13 +379,6 @@
       font-size: 10px;
     }
   
-    .calendar input {
-      width: 80%;
-      height: 20px;
-      margin: 3px;
-      font-size: 7px;
-    }
-  
     h4 {
       font-size: 9px;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -382,7 +386,7 @@
     }
   
     p {
-      font-size: 10px;
+      font-size: 5px;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
   
@@ -403,20 +407,20 @@
       }
     }
   
-    .div1 {
+    .formulario {
       margin-top: 40px;
       text-align: center;
     }
   
-    .div2 {
+    .adress {
       display: none;
     }
   
-    .div3 img {
+    .salonimg img {
       max-width: 100vw;
     }
   
-    .div4, .tresfotos {
+    .mapacontact, .tresfotos {
       display: none;
     }
   
