@@ -89,6 +89,7 @@ h2 {
     object-fit: cover;
     display: inline-block;
     z-index: 0;
+    opacity: 0.7;
 }
 
 .tarjetita div {
@@ -102,9 +103,10 @@ h2 {
 }
 
 .tarjetita p {
-    font-size: 16px;
+    font-size: 19px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
+    line-height: 25px;
 }
 
 h3 {
@@ -174,7 +176,7 @@ ol {
 }
 
 .fototips p {
-    font-size: 25px;
+    font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -229,6 +231,21 @@ h4 {
     text-align: center;
 }
 
+.redes {
+    min-width: 240px;
+}
+
+.redes p {
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.direc {
+    font-size: 25px;
+    padding: 10px;
+    background-color: pink;
+}
+
 @media only screen and (min-width: 670px) {
     .parent {
         display: grid;
@@ -262,7 +279,6 @@ h4 {
     
     .adress p {
         margin-top: 15px;
-        font-size: 25px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
     
@@ -277,6 +293,14 @@ h4 {
 
     .contactmobile {
         display: none;
+    }
+
+    .fototips p {
+        text-align: center;
+        margin-top: 120px;
+        margin-bottom: 120px;
+        padding: 20px;
+        background-color: rgb(249, 220, 224);
     }
 } 
 
@@ -345,8 +369,9 @@ h4 {
     .tarjetita p {
         text-align: center;
         justify-content: center;
-        font-size: 12px;
+        font-size: 15px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
+        line-height: 17px;
     }
 
     .contenedor {
@@ -450,6 +475,8 @@ h4 {
 
     .fototips p {
         font-size: 15px;
+        background-color: rgb(249, 220, 224);
+
     }
 
     .contactmobile {
@@ -458,7 +485,7 @@ h4 {
 
     .contactmobile p {
         color: #191919;
-        font-size: 20px;
+        font-size: 25px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         text-align: center;
     }
