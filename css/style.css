@@ -222,15 +222,15 @@ ol {
     text-align: left;
 }
 
-.divcontact {
-    display: inline;
-    width: 50%;
-}
-
 .contactanos img {
     width: 50%;
     display:flex;
     justify-content: space-between;
+}
+
+.divcontact {
+    display: inline;
+    width: 50%;
 }
 
 .tresfotos {
@@ -430,10 +430,6 @@ h4 {
         width: 50vw;
     }
 
-    .columnafea {
-        display: none;
-    }
-
     .calendar p {
         font-size: 15px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -441,18 +437,22 @@ h4 {
         margin-bottom: 5px;
     }
 
-    ol {
-        list-style: none;
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);
-        font-size: 10px;
-    }
-
     .calendar input {
         width: 80%;
         height: 20px;
         margin: 3px;
         font-size: 7px;
+    }
+
+    .columnafea {
+        display: none;
+    }
+
+    ol {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        font-size: 10px;
     }
 
     h4 {
