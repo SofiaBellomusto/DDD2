@@ -89,7 +89,7 @@ h2 {
     object-fit: cover;
     display: inline-block;
     z-index: 0;
-    opacity: 0.7;
+    opacity: 0.6;
 }
 
 .tarjetita div {
@@ -103,6 +103,39 @@ h2 {
 }
 
 .tarjetita p {
+    font-size: 19px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    line-height: 25px;
+}
+
+.tarje {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+
+.tarje img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: inline-block;
+    z-index: 0;
+    opacity: 0.7;
+}
+
+.tarje div {
+    text-align: right;
+    padding: 10px;
+    position: relative;
+    display: inline-block;
+    z-index: 13;
+    color: #191919;
+    font-size: 30px;
+}
+
+.tarje p {
     font-size: 19px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
@@ -363,10 +396,22 @@ h4 {
     }
 
     .tarjetita {
-        height: 20vh;
+        height: 35vh;
     }
 
     .tarjetita p {
+        text-align: center;
+        justify-content: center;
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        line-height: 17px;
+    }
+
+    .tarje img {
+        height: 430px;
+    }
+
+    .tarje p {
         text-align: center;
         justify-content: center;
         font-size: 15px;
