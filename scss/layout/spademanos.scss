@@ -1,0 +1,101 @@
+/* main */
+
+h2 {
+    margin-top: 140px;
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.cards {
+    background-color: #eeee;
+    margin-top: 30px;
+}
+
+.tarjetita {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: inline-block;
+        z-index: 0;
+    }
+
+    div {
+        text-align: right;
+        padding: 10px;
+        position: relative;
+        display: inline-block;
+        z-index: 13;
+        color: #191919;
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 19px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        line-height: 25px;
+    }
+}
+
+h3 {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.calendar {
+    margin-left: 30px;
+    text-align: center;
+    width: 30vw;
+    display: table-cell;
+
+    img {
+        max-width: 100%;
+    }
+
+    p {
+        font-size: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+    }
+
+    input {
+        width: 80%;
+        height: 25px;
+        margin: 3px;
+    }
+}
+
+ol {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.first-day {
+    grid-column-start: 6;
+}
+
+.day-name {
+    background: #eee;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contenedor {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
