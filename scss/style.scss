@@ -1,4 +1,14 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+//import base
+@import 'base/reset';
+
+//import components
+@import 'components/navbar';
+@import 'components/footer';
+
+//import layout
+@import 'layout/acrilicos';
+@import 'layout/contacto';
+@import 'layout/index';
+@import 'layout/mediaqueries';
+@import 'layout/spademanos';
+@import 'layout/tips';

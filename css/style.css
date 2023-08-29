@@ -1,541 +1,505 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 /* header */
 header {
-    background-color: #191919;
-    padding: 25px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 999;
+  background-color: #191919;
+  padding: 25px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
 }
 
 nav ul {
-    text-align: center;
-    display: inline;
+  text-align: center;
+  display: inline;
 }
-
 nav ul li {
-    display: inline-block;
-    padding: 15px;
+  display: inline-block;
+  padding: 15px;
+}
+nav ul-link {
+  color: aliceblue;
+  text-decoration: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+nav ulDDD2 {
+  color: aliceblue;
+  text-decoration: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 40px;
+  text-align: left;
 }
 
-.nav-link {
-    color: aliceblue;
-    text-decoration: none;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 20px;
-    text-align: center;
-}
-
-.nav-link-DDD2 {
-    color: aliceblue;
-    text-decoration: none;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 40px;
-    text-align: left;
-}
-
-.carousel-inner {
-    height: 500px;
-    margin-top: 70px;
-}
-
-.carousel-item {
-    height: 500px;
-    margin-top: 70px;
-}
-
-.large_img {
-    margin-top: 100px;
-    left: 0;
-    width: 100%;
-    height: 700px;
-    object-fit: cover;
-}
-
-.imagen_pegada {
-    width: 650px;
-    display: inline-block;
-    margin: 10px;
-}
-
-h2 {
-    margin-top: 140px;
-    margin-bottom: 20px;
-    font-size: 50px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-}
-
-.cards {
-    background-color: #eeee;
-    margin-top: 30px;
-}
-
-.tarjetita {
-    display: inline-block;
-    width: 100%;
-    position: relative;
-}
-
-.tarjetita img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: inline-block;
-    z-index: 0;
-    opacity: 0.6;
-}
-
-.tarjetita div {
-    text-align: right;
-    padding: 10px;
-    position: relative;
-    display: inline-block;
-    z-index: 13;
-    color: #191919;
-    font-size: 30px;
-}
-
-.tarjetita p {
-    font-size: 19px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    line-height: 25px;
-}
-
-.tarje {
-    display: inline-block;
-    width: 100%;
-    position: relative;
-}
-
-.tarje img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: inline-block;
-    z-index: 0;
-    opacity: 0.7;
-}
-
-.tarje div {
-    text-align: right;
-    padding: 10px;
-    position: relative;
-    display: inline-block;
-    z-index: 13;
-    color: #191919;
-    font-size: 30px;
-}
-
-.tarje p {
-    font-size: 19px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    line-height: 25px;
-}
-
-h3 {
-    margin-top: 60px;
-    margin-bottom: 30px;
-    font-size: 40px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-}
-
-.calendar {
-    margin-left: 30px;
-    text-align: center;
-    width: 30vw;
-    display: table-cell;
-}
-
-.calendar img {
-    max-width: 100%;
-}
-
-.calendar p {
-    font-size: 30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-}
-
-.calendar input {
-    width: 80%;
-    height: 25px;
-    margin: 3px;
-}
-
-ol {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-}
-
-.first-day {
-    grid-column-start: 6;
-}
-
-.day-name {
-    background: #eee;
-    font-weight: bold;
-    text-align: center;
-}
-
-.contenedor {
-    width: 100%;
-    height: 250px;
-    display:flex;
-    justify-content: space-between;
-}
-
-.fototips {
-    width: 100%;
-    height: 370px;
-    display:flex;
-    justify-content: space-between;
-}
-
-.fototips img {
-    width: 100%;
-    object-fit: cover;
-}
-
-.fototips p {
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.contactanos {
-    width: 50%;
-    margin-top: 100px;
-    color: #191919;
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: left;
-}
-
-.contactanos img {
-    width: 50%;
-    display:flex;
-    justify-content: space-between;
-}
-
-.divcontact {
-    display: inline;
-    width: 50%;
-}
-
-.tresfotos {
-    height: 240px;
-    display:flex;
-    justify-content: space-between;
-    width: 100%;
-    object-fit: cover
-}
-
-
+/* footer */
 h4 {
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
 }
 
 .footer {
-    height: 240px;
-    display:flex;
-    justify-content: space-between;
-    width: 100%;
-    object-fit: cover
+  height: 240px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  object-fit: cover;
 }
-
 .footer p {
-    font-size: 12px;
-    font-family: 'Times New Roman', Times, serif;
-    color: #000000;
-    line-height: normal;
-    text-align: center;
+  font-size: 12px;
+  font-family: "Times New Roman", Times, serif;
+  color: #000000;
+  line-height: normal;
+  text-align: center;
 }
 
 .redes {
-    min-width: 240px;
+  min-width: 240px;
 }
-
 .redes p {
-    font-size: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* main */
+.cards {
+  background-color: rgba(238, 238, 238, 0.9333333333);
+  margin-top: 30px;
+}
+
+.tarje {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+}
+.tarje img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: inline-block;
+  z-index: 0;
+  opacity: 0.7;
+}
+.tarje div {
+  text-align: right;
+  padding: 10px;
+  position: relative;
+  display: inline-block;
+  z-index: 13;
+  color: #191919;
+  font-size: 30px;
+}
+.tarje p {
+  font-size: 19px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  line-height: 25px;
+}
+
+h3 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  font-size: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+.calendar {
+  margin-left: 30px;
+  text-align: center;
+  width: 30vw;
+  display: table-cell;
+}
+.calendar img {
+  max-width: 100%;
+}
+.calendar p {
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+.calendar input {
+  width: 80%;
+  height: 25px;
+  margin: 3px;
+}
+
+ol {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.first-day {
+  grid-column-start: 6;
+}
+
+.day-name {
+  background: #eee;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contenedor {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* main */
 .direc {
-    font-size: 25px;
-    padding: 10px;
-    background-color: pink;
+  font-size: 25px;
+  padding: 10px;
+  background-color: pink;
 }
 
+.tresfotos {
+  height: 240px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* main */
+.carousel-inner, .carousel-item {
+  height: 500px;
+  margin-top: 70px;
+}
+
+/* media queries */
 @media only screen and (min-width: 670px) {
-    .parent {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 0.5fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-        margin-top: 98px;
-        }
-        
-    .formulario { grid-area: 1 / 3 / 3 / 5;
-        padding-top: 45px;
-        margin-left: 10px;
-    }
-
-    .formulario input {
-        width: 80%;
-        height: 25px;
-        margin: 3px;
-    }
-    
-    .formulario button {
-        background: pink;
-        color: rgb(177, 45, 67);
-        border: none;
-        font-family: sans-serif;
-        padding: 0.25rem 2rem;
-    }
-    
-    .adress { grid-area: 1 / 1 / 2 / 2; }
-    
-    .adress p {
-        margin-top: 15px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-    
-    .salonimg { grid-area: 1 / 2 / 2 / 3; }
-    
-    .salonimg img {
-        margin-top: 15px;
-        width: 100%;
-    }
-    
-    .mapacontact { grid-area: 2 / 1 / 3 / 3; }
-
-    .contactmobile {
-        display: none;
-    }
-
-    .fototips p {
-        text-align: center;
-        margin-top: 120px;
-        margin-bottom: 120px;
-        padding: 20px;
-        background-color: rgb(249, 220, 224);
-    }
-
-    .padding100left {
-        padding-left: 100px;
-    }
-} 
-
+  .parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 0.5fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-top: 98px;
+  }
+  .formulario {
+    grid-area: 1/3/3/5;
+    padding-top: 45px;
+    margin-left: 10px;
+  }
+  .formulario input {
+    width: 80%;
+    height: 25px;
+    margin: 3px;
+  }
+  .formulario button {
+    background: pink;
+    color: rgb(177, 45, 67);
+    border: none;
+    font-family: sans-serif;
+    padding: 0.25rem 2rem;
+  }
+  .adress {
+    grid-area: 1/1/2/2;
+  }
+  .adress p {
+    margin-top: 15px;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .salonimg {
+    grid-area: 1/2/2/3;
+  }
+  .salonimg img {
+    margin-top: 15px;
+    width: 100%;
+  }
+  .mapacontact {
+    grid-area: 2/1/3/3;
+  }
+  .contactmobile {
+    display: none;
+  }
+  .fototips p {
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    padding: 20px;
+    background-color: rgb(249, 220, 224);
+  }
+  .padding100left {
+    padding-left: 100px;
+  }
+}
 @media only screen and (max-width: 670px) {
-    .nav-link-DDD2 {
+  .nav-link-DDD2 {
     color: aliceblue;
     text-decoration: none;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     font-size: 50px;
     display: flex;
     margin-left: 110px;
     margin-bottom: 10px;
-    }
-
-    .nav-link {
-        color: aliceblue;
-        text-decoration: none;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 12px;
-        text-align: center;
-    }
-
-    nav ul li {
-        max-width: 25vw;
-    }
-
-    .carousel {
-        margin-bottom: 10px;
-    }
-
-    .carousel-inner {
-        height: 300px;
-        margin-top: 70px;
-    }
-    
-    .carousel-item {
-        height: 300px;
-        margin-top: 70px;
-    }
-
-    .carousel-item img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-    }
-
-    h2 {
-        margin-top: 180px;
-        font-size: 30px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        text-align: center;
-    }
-
-    h3 {
-        margin-top: 50px;
-        margin-bottom: 20px;
-        font-size: 25px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        text-align: center;
-    }
-
-    .tarjetita {
-        height: 35vh;
-    }
-
-    .tarjetita p {
-        text-align: center;
-        justify-content: center;
-        font-size: 15px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        line-height: 17px;
-    }
-
-    .tarje img {
-        height: 430px;
-    }
-
-    .tarje p {
-        text-align: center;
-        justify-content: center;
-        font-size: 15px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        line-height: 17px;
-    }
-
-    .contenedor {
-        width: 100%;
-        height: 180px;
-        display:flex;
-        justify-content: space-between;
-    }
-
-    .calendar {
-        width: 50vw;
-    }
-
-    .calendar p {
-        font-size: 15px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-weight: bold;
-        margin-bottom: 5px;
-    }
-
-    .calendar input {
-        width: 80%;
-        height: 18px;
-        margin: 3px;
-        font-size: 7px;
-    }
-
-    .columnafea {
-        display: none;
-    }
-
-    ol {
-        list-style: none;
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);
-        font-size: 10px;
-    }
-
-    h4 {
-        font-size: 16px;
-        font-weight: bold;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        text-align: center;
-    }
-
-    p {
-        font-size: 12px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-
-    .footer {
-        height: 200px;
-        display: block;
-        justify-content: space-between;
-        width: 100%;
-        object-fit: cover
-    }
-    
-    .footer iframe {
-        height: 200px;
-        width: 95vw;
-    }
-
-    .footer div {
-        margin-bottom: 10px;
-    }
-
-    .footer p {
-        margin-bottom: 0px;
-    }
-
-    .formulario {
-        margin-top: 40px;
-        text-align: center;
-    }
-
-    .adress {
-        display: none;
-    }
-
-    .salonimg img {
-        max-width: 100vw;
-    }
-
-    .mapacontact {
-        display: none;
-    }
-
-    .tresfotos {
-        display: none;
-    }
-
-    .fototips {
-        height: 200px;
-    }
-
-    .fototips img {
-        max-width: 50vw;
-        max-height: 200px;
-    }
-
-    .fototips p {
-        font-size: 15px;
-        background-color: rgb(249, 220, 224);
-
-    }
-
-    .contactmobile {
-        margin-top: 200px;
-    }
-
-    .contactmobile p {
-        color: #191919;
-        font-size: 25px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        text-align: center;
-    }
+  }
+  .nav-link {
+    color: aliceblue;
+    text-decoration: none;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    text-align: center;
+  }
+  nav ul li {
+    max-width: 25vw;
+  }
+  .carousel {
+    margin-bottom: 10px;
+  }
+  .carousel-inner {
+    height: 300px;
+    margin-top: 70px;
+  }
+  .carousel-item {
+    height: 300px;
+    margin-top: 70px;
+  }
+  .carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .padding100left {
+    padding-left: 0;
+  }
+  h2 {
+    margin-top: 180px;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+  }
+  h3 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+  }
+  .tarjetita {
+    height: 20vh;
+  }
+  .tarjetita p {
+    text-align: center;
+    justify-content: center;
+    font-size: 12px;
+  }
+  .tarje img {
+    height: 430px;
+  }
+  .tarje p {
+    text-align: center;
+    justify-content: center;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 17px;
+  }
+  .contenedor {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .calendar {
+    width: 50vw;
+  }
+  .calendar p {
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .calendar input {
+    width: 80%;
+    height: 18px;
+    margin: 3px;
+    font-size: 7px;
+  }
+  .columnafea {
+    display: none;
+  }
+  ol {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-size: 10px;
+  }
+  h4 {
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+  }
+  p {
+    font-size: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .footer {
+    height: 200px;
+    display: block;
+    justify-content: space-between;
+    width: 100%;
+    object-fit: cover;
+  }
+  .footer iframe {
+    height: 200px;
+    width: 95vw;
+  }
+  .footer div {
+    margin-bottom: 10px;
+  }
+  .footer p {
+    margin-bottom: 0px;
+  }
+  .formulario {
+    margin-top: 40px;
+    text-align: center;
+  }
+  .adress {
+    display: none;
+  }
+  .salonimg img {
+    max-width: 100vw;
+  }
+  .mapacontact, .tresfotos {
+    display: none;
+  }
+  .fototips {
+    height: 200px;
+  }
+  .fototips img {
+    max-width: 50vw;
+    max-height: 200px;
+  }
+  .fototips p {
+    font-size: 15px;
+  }
+  .contactmobile {
+    margin-top: 200px;
+  }
+  .contactmobile p {
+    color: #191919;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+  }
 }
+/* main */
+h2 {
+  margin-top: 140px;
+  margin-bottom: 20px;
+  font-size: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+.cards {
+  background-color: rgba(238, 238, 238, 0.9333333333);
+  margin-top: 30px;
+}
+
+.tarjetita {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+}
+.tarjetita img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: inline-block;
+  z-index: 0;
+}
+.tarjetita div {
+  text-align: right;
+  padding: 10px;
+  position: relative;
+  display: inline-block;
+  z-index: 13;
+  color: #191919;
+  font-size: 30px;
+}
+.tarjetita p {
+  font-size: 19px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  line-height: 25px;
+}
+
+h3 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  font-size: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+.calendar {
+  margin-left: 30px;
+  text-align: center;
+  width: 30vw;
+  display: table-cell;
+}
+.calendar img {
+  max-width: 100%;
+}
+.calendar p {
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+.calendar input {
+  width: 80%;
+  height: 25px;
+  margin: 3px;
+}
+
+ol {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.first-day {
+  grid-column-start: 6;
+}
+
+.day-name {
+  background: #eee;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contenedor {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* main */
+.fototips {
+  width: 100%;
+  height: 370px;
+  display: flex;
+  justify-content: space-between;
+}
+.fototips img {
+  width: 100%;
+  object-fit: cover;
+}
+.fototips p {
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */
