@@ -1,5 +1,6 @@
 //import base
 @import 'base/reset';
+@import 'base/variables';
 
 //import components
 @import 'components/navbar';
@@ -9,6 +10,6 @@
 @import 'layout/acrilicos';
 @import 'layout/contacto';
 @import 'layout/index';
-@import 'layout/mediaqueries';
 @import 'layout/spademanos';
 @import 'layout/tips';
+@import 'layout/mediaqueries';
