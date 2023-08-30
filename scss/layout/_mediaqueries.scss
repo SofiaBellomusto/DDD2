@@ -77,6 +77,10 @@
 
 @media only screen and (max-width: 670px) {
 
+    body {
+        margin-top: 200px;
+    }
+
     .nav-link-DDD2 {
         color: aliceblue;
         text-decoration: none;
@@ -253,6 +257,7 @@
         img {
         max-width: 50vw;
         max-height: 200px;
+        border-radius: 10px;
         }
 
         p {
