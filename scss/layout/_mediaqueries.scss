@@ -1,6 +1,48 @@
 /* media queries */
 
 @media only screen and (min-width: 670px) {
+    h2 {
+        margin-top: 140px;
+        margin-bottom: 20px;
+        font-size: 50px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+    }
+    
+    .tarjetita {
+        display: inline-block;
+        width: 100%;
+        position: relative;
+        }
+
+        p {
+        font-size: 19px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        line-height: 25px;
+        }
+
+        img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: inline-block;
+        z-index: 0;
+        opacity: 0.7;
+        }
+
+        div {
+        text-align: right;
+        padding: 10px;
+        position: relative;
+        display: inline-block;
+        z-index: 13;
+        color: #191919;
+        font-size: 30px;
+        }
+    }
+
     .parent {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -29,8 +71,8 @@
         }
 
         p {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: 14px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
         }
     }
 
@@ -73,7 +115,7 @@
     .padding100left {
         padding-left: 100px;
     }
-}
+
 
 @media only screen and (max-width: 670px) {
 
@@ -127,44 +169,68 @@
 
     h2 {
         margin-top: 180px;
-        font-size: 30px;
+        font-size: 35px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         text-align: center;
     }
 
     h3 {
-        margin-top: 50px;
+        margin-top: 30px;
         margin-bottom: 20px;
         font-size: 25px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         text-align: center;
     }
 
-    .tarjetita {
-        height: 20vh;
 
-        p {
+.tarjetita {
+        height: 20vh;
+        }
+
+    .tarjetita p {
+        font-size: 12px;
         text-align: center;
         justify-content: center;
-        font-size: 12px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        line-height: 15px;
+        }
+
+    .tarjetita img {
+        position: absolute;
+        width: 100%;
+        height: 245px;
+        object-fit: cover;
+        display: inline-block;
+        z-index: 0;
+        opacity: 0.7;
+        }
+
+    .tarjetita div {
+        text-align: right;
+        padding: 10px;
+        position: relative;
+        display: inline-block;
+        z-index: 13;
+        color: #191919;
+        font-size: 30px;
         }
     }
 
     .tarje img {
-        height: 430px;
+        height: 337px;
     }
 
     .tarje p {
+        font-size: 12px;
         text-align: center;
         justify-content: center;
-        font-size: 15px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        line-height: 17px;
+        line-height: 15px;
     }
 
     .contenedor {
         width: 100%;
-        height: 180px;
+        height: 173px;
         display: flex;
         justify-content: space-between;
     }
@@ -172,8 +238,8 @@
     .calendar {
         width: 50vw;
 
-        p {
-        font-size: 15px;
+    .calendar p {
+        font-size: 18px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: bold;
         margin-bottom: 5px;
@@ -270,4 +336,3 @@
         text-align: center;
         }
     }
-}

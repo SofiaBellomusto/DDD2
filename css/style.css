@@ -179,68 +179,112 @@ ol {
 
 /* media queries */
 @media only screen and (min-width: 670px) {
-  .parent {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 0.5fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    margin-top: 98px;
-  }
-  .formulario {
-    grid-area: 1/3/3/5;
-    padding-top: 45px;
-    margin-left: 10px;
-  }
-  .formulario input {
-    width: 80%;
-    height: 25px;
-    margin: 3px;
-  }
-  .formulario button {
-    background: pink;
-    color: rgb(177, 45, 67);
-    border: none;
-    font-family: sans-serif;
-    padding: 0.25rem 2rem;
-  }
-  .formulario p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 14px;
-  }
-  .adress {
-    grid-area: 1/1/2/2;
-  }
-  .adress p {
-    margin-top: 15px;
-    font-size: 21px;
+  h2 {
+    margin-top: 140px;
+    margin-bottom: 20px;
+    font-size: 50px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
   }
-  .salonimg {
-    grid-area: 1/2/2/3;
-  }
-  .salonimg img {
-    margin-top: 15px;
+  .tarjetita {
+    display: inline-block;
     width: 100%;
+    position: relative;
   }
-  .mapacontact {
-    grid-area: 2/1/3/3;
-  }
-  .contactmobile {
-    display: none;
-  }
-  .fototips p {
+  p {
+    font-size: 19px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    margin-top: 120px;
-    margin-bottom: 120px;
-    padding: 15px;
-    background-color: rgb(249, 220, 224);
+    line-height: 25px;
   }
-  .padding100left {
-    padding-left: 100px;
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: inline-block;
+    z-index: 0;
+    opacity: 0.7;
+  }
+  div {
+    text-align: right;
+    padding: 10px;
+    position: relative;
+    display: inline-block;
+    z-index: 13;
+    color: #191919;
+    font-size: 30px;
   }
 }
+.parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 0.5fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin-top: 98px;
+}
+
+.formulario {
+  grid-area: 1/3/3/5;
+  padding-top: 45px;
+  margin-left: 10px;
+}
+.formulario input {
+  width: 80%;
+  height: 25px;
+  margin: 3px;
+}
+.formulario button {
+  background: pink;
+  color: rgb(177, 45, 67);
+  border: none;
+  font-family: sans-serif;
+  padding: 0.25rem 2rem;
+}
+.formulario p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+}
+
+.adress {
+  grid-area: 1/1/2/2;
+}
+.adress p {
+  margin-top: 15px;
+  font-size: 21px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+.salonimg {
+  grid-area: 1/2/2/3;
+}
+.salonimg img {
+  margin-top: 15px;
+  width: 100%;
+}
+
+.mapacontact {
+  grid-area: 2/1/3/3;
+}
+
+.contactmobile {
+  display: none;
+}
+
+.fototips p {
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  padding: 15px;
+  background-color: rgb(249, 220, 224);
+}
+
+.padding100left {
+  padding-left: 100px;
+}
+
 @media only screen and (max-width: 670px) {
   .nav-link-DDD2 {
     color: aliceblue;
@@ -284,12 +328,12 @@ ol {
   }
   h2 {
     margin-top: 180px;
-    font-size: 30px;
+    font-size: 35px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
   }
   h3 {
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 20px;
     font-size: 25px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -299,150 +343,148 @@ ol {
     height: 20vh;
   }
   .tarjetita p {
+    font-size: 12px;
     text-align: center;
     justify-content: center;
-    font-size: 12px;
-  }
-  .tarje img {
-    height: 430px;
-  }
-  .tarje p {
-    text-align: center;
-    justify-content: center;
-    font-size: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    line-height: 17px;
+    line-height: 15px;
   }
-  .contenedor {
+  .tarjetita img {
+    position: absolute;
     width: 100%;
-    height: 180px;
-    display: flex;
-    justify-content: space-between;
-  }
-  .calendar {
-    width: 50vw;
-  }
-  .calendar p {
-    font-size: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  .calendar input {
-    width: 80%;
-    height: 18px;
-    margin: 3px;
-    font-size: 7px;
-  }
-  .columnafea {
-    display: none;
-  }
-  ol {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    font-size: 10px;
-  }
-  h4 {
-    font-size: 12px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-  }
-  p {
-    font-size: 5px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
-  .footer {
-    height: 200px;
-    display: block;
-    justify-content: space-between;
-    width: 100%;
+    height: 245px;
     object-fit: cover;
+    display: inline-block;
+    z-index: 0;
+    opacity: 0.7;
   }
-  .footer iframe {
-    height: 200px;
-    width: 95vw;
-  }
-  .footer div {
-    margin-bottom: 10px;
-  }
-  .footer p {
-    margin-bottom: 0px;
-  }
-  .formulario {
-    margin-top: 40px;
-    text-align: center;
-  }
-  .adress {
-    display: none;
-  }
-  .salonimg img {
-    max-width: 100vw;
-  }
-  .mapacontact, .tresfotos {
-    display: none;
-  }
-  .fototips {
-    height: 200px;
-  }
-  .fototips img {
-    max-width: 50vw;
-    max-height: 200px;
-  }
-  .fototips p {
-    font-size: 15px;
-  }
-  .contactmobile {
-    margin-top: 200px;
-  }
-  .contactmobile p {
+  .tarjetita div {
+    text-align: right;
+    padding: 10px;
+    position: relative;
+    display: inline-block;
+    z-index: 13;
     color: #191919;
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
+    font-size: 30px;
   }
 }
-/* main */
-h2 {
-  margin-top: 140px;
-  margin-bottom: 20px;
-  font-size: 50px;
+.tarje img {
+  height: 337px;
+}
+
+.tarje p {
+  font-size: 12px;
+  text-align: center;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 15px;
+}
+
+.contenedor {
+  width: 100%;
+  height: 173px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.calendar {
+  width: 50vw;
+}
+.calendar .calendar p {
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.calendar input {
+  width: 80%;
+  height: 18px;
+  margin: 3px;
+  font-size: 7px;
+}
+
+.columnafea {
+  display: none;
+}
+
+ol {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-size: 10px;
+}
+
+h4 {
+  font-size: 12px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
 }
 
+p {
+  font-size: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.footer {
+  height: 200px;
+  display: block;
+  justify-content: space-between;
+  width: 100%;
+  object-fit: cover;
+}
+.footer iframe {
+  height: 200px;
+  width: 95vw;
+}
+.footer div {
+  margin-bottom: 10px;
+}
+.footer p {
+  margin-bottom: 0px;
+}
+
+.formulario {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.adress {
+  display: none;
+}
+
+.salonimg img {
+  max-width: 100vw;
+}
+
+.mapacontact, .tresfotos {
+  display: none;
+}
+
+.fototips {
+  height: 200px;
+}
+.fototips img {
+  max-width: 50vw;
+  max-height: 200px;
+}
+.fototips p {
+  font-size: 15px;
+}
+
+.contactmobile {
+  margin-top: 200px;
+}
+.contactmobile p {
+  color: #191919;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+/* main */
 .cards {
   background-color: rgba(238, 238, 238, 0.9333333333);
   margin-top: 30px;
-}
-
-.tarjetita {
-  display: inline-block;
-  width: 100%;
-  position: relative;
-}
-.tarjetita img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: inline-block;
-  z-index: 0;
-}
-.tarjetita div {
-  text-align: right;
-  padding: 10px;
-  position: relative;
-  display: inline-block;
-  z-index: 13;
-  color: #191919;
-  font-size: 30px;
-}
-.tarjetita p {
-  font-size: 19px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: center;
-  line-height: 25px;
 }
 
 h3 {
