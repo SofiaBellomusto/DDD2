@@ -1,7 +1,12 @@
-  /* header */
+html {
+    background-color: #ffb0b04a;
+}
+
+/* header */
 
 header {
-    background-color: $dark-color;
+    box-shadow: -1px -3px 11px;
+    background-color: #ffb0b0;
     padding: 25px;
     position: fixed;
     top: 0;
@@ -15,6 +20,7 @@ header {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 40px;
     text-align: left;
+    text-shadow: 2px 2px 2px rgb(177, 45, 67);
 }
 
 .nav-link {
@@ -29,11 +35,12 @@ header {
 
 nav ul {
     display: inline-block;
+    text-shadow: 2px 2px 2px rgb(177, 45, 67);
 }
 
 nav ul li {
     display: inline-block;
 }
 nav ul li :hover {
-   color: grey!important;
+   color: rgb(201, 73, 94)!important;
 }

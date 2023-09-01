@@ -3,9 +3,14 @@
   padding: 0;
 }
 
+html {
+  background-color: rgba(255, 176, 176, 0.2901960784);
+}
+
 /* header */
 header {
-  background-color: #191919;
+  box-shadow: -1px -3px 11px;
+  background-color: #ffb0b0;
   padding: 25px;
   position: fixed;
   top: 0;
@@ -19,6 +24,7 @@ header {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 40px;
   text-align: left;
+  text-shadow: 2px 2px 2px rgb(177, 45, 67);
 }
 
 .nav-link {
@@ -33,15 +39,20 @@ header {
 
 nav ul {
   display: inline-block;
+  text-shadow: 2px 2px 2px rgb(177, 45, 67);
 }
 
 nav ul li {
   display: inline-block;
 }
 
+nav ul li :hover {
+  color: rgb(201, 73, 94) !important;
+}
+
 /* footer */
 h4 {
-  font-size: 20px;
+  font-size: 17px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
 }
@@ -51,10 +62,12 @@ h4 {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
 }
+
 .footer p {
-  font-size: 12px;
+  font-size: 7px;
   font-family: "Times New Roman", Times, serif;
   color: #000000;
   line-height: normal;
@@ -64,8 +77,9 @@ h4 {
 .redes {
   min-width: 240px;
 }
+
 .redes p {
-  font-size: 15px;
+  font-size: 12px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -80,15 +94,19 @@ h4 {
   width: 100%;
   position: relative;
 }
+
 .tarje img {
   position: absolute;
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
   display: inline-block;
   z-index: 0;
+  filter: blur(4px);
   opacity: 0.7;
 }
+
 .tarje div {
   text-align: right;
   padding: 10px;
@@ -98,6 +116,7 @@ h4 {
   color: #191919;
   font-size: 30px;
 }
+
 .tarje p {
   font-size: 19px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -119,14 +138,143 @@ h3 {
   width: 30vw;
   display: table-cell;
 }
+
 .calendar img {
   max-width: 100%;
 }
+
 .calendar p {
   font-size: 30px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
 }
+
+.calendar input {
+  width: 80%;
+  height: 25px;
+  margin: 3px;
+}
+
+ol {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.first-day {
+  grid-column-start: 6;
+}
+
+.day-name {
+  background: rgba(238, 238, 238, 0.9333333333);
+  font-weight: bold;
+  text-align: center;
+}
+
+.contenedor {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* main */
+.direc {
+  font-size: 25px;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  background-color: #ffb0b0;
+}
+
+.tresfotos {
+  height: 240px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+/* main */
+.carousel-inner, .carousel-item {
+  height: 500px;
+  margin-top: 70px;
+}
+
+/* main */
+h2 {
+  margin-top: 140px;
+  margin-bottom: 20px;
+  font-size: 65px;
+  font-family: "Great Vibes", cursive;
+  text-align: center;
+}
+
+.cards {
+  background-color: rgba(238, 238, 238, 0.9333333333);
+  margin-top: 30px;
+}
+
+.tarjetita {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+}
+
+.tarjetita img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  display: inline-block;
+  z-index: 0;
+  filter: blur(4px);
+  opacity: 0.6;
+}
+
+.tarjetita div {
+  text-align: right;
+  padding: 10px;
+  position: relative;
+  display: inline-block;
+  z-index: 13;
+  color: #191919;
+  font-size: 30px;
+}
+
+.tarjetita p {
+  font-size: 19px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  line-height: 25px;
+}
+
+h3 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  font-size: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+.calendar {
+  margin-left: 30px;
+  text-align: center;
+  width: 30vw;
+  display: table-cell;
+}
+
+.calendar img {
+  max-width: 100%;
+}
+
+.calendar p {
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+
 .calendar input {
   width: 80%;
   height: 25px;
@@ -157,24 +305,27 @@ ol {
 }
 
 /* main */
-.direc {
-  font-size: 25px;
-  padding: 10px;
-  background-color: pink;
+h2 {
+  font-family: "Roboto Flex", sans-serif;
 }
 
-.tresfotos {
-  height: 240px;
+.fototips {
+  width: 100%;
+  height: 370px;
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  object-fit: cover;
 }
 
-/* main */
-.carousel-inner, .carousel-item {
-  height: 500px;
-  margin-top: 70px;
+.fototips img {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 100px;
+}
+
+.fototips p {
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* media queries */
@@ -242,6 +393,9 @@ ol {
   }
 }
 @media only screen and (max-width: 670px) {
+  body {
+    margin-top: 185px;
+  }
   .nav-link-DDD2 {
     color: aliceblue;
     text-decoration: none;
@@ -261,7 +415,7 @@ ol {
     padding-bottom: 0;
   }
   nav ul li {
-    max-width: 25vw;
+    max-width: 23vw;
   }
   .carousel {
     margin-bottom: 10px;
@@ -277,45 +431,47 @@ ol {
   .carousel-item img {
     height: 100%;
     width: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
   }
   .padding100left {
     padding-left: 0;
   }
   h2 {
-    margin-top: 180px;
+    margin-top: 150px;
     font-size: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
   }
   h3 {
-    margin-top: 50px;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 15px;
     font-size: 25px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
   }
   .tarjetita {
-    height: 20vh;
+    height: 35vh;
   }
   .tarjetita p {
     text-align: center;
     justify-content: center;
-    font-size: 12px;
+    font-size: 13px;
+    line-height: 17px;
   }
   .tarje img {
-    height: 430px;
+    height: 100%;
   }
   .tarje p {
     text-align: center;
     justify-content: center;
-    font-size: 15px;
+    font-size: 13px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 17px;
   }
   .contenedor {
     width: 100%;
-    height: 180px;
+    height: 120px;
     display: flex;
     justify-content: space-between;
   }
@@ -349,7 +505,7 @@ ol {
     text-align: center;
   }
   p {
-    font-size: 5px;
+    font-size: 12px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   .footer {
@@ -357,6 +513,7 @@ ol {
     display: block;
     justify-content: space-between;
     width: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
   }
   .footer iframe {
@@ -373,6 +530,23 @@ ol {
     margin-top: 40px;
     text-align: center;
   }
+  input {
+    width: 80%;
+    height: 25px;
+    margin: 3px;
+  }
+  button {
+    background: pink;
+    color: rgb(177, 45, 67);
+    border: none;
+    font-family: sans-serif;
+    padding: 0.25rem 2rem;
+    margin-bottom: 5px;
+  }
+  p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+  }
   .adress {
     display: none;
   }
@@ -388,9 +562,14 @@ ol {
   .fototips img {
     max-width: 50vw;
     max-height: 200px;
+    border-radius: 10px;
   }
   .fototips p {
-    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding: 8px;
+    background-color: rgb(249, 220, 224);
+    font-size: 13px;
   }
   .contactmobile {
     margin-top: 200px;
@@ -401,115 +580,6 @@ ol {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
   }
-}
-/* main */
-h2 {
-  margin-top: 140px;
-  margin-bottom: 20px;
-  font-size: 50px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: center;
-}
-
-.cards {
-  background-color: rgba(238, 238, 238, 0.9333333333);
-  margin-top: 30px;
-}
-
-.tarjetita {
-  display: inline-block;
-  width: 100%;
-  position: relative;
-}
-.tarjetita img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: inline-block;
-  z-index: 0;
-}
-.tarjetita div {
-  text-align: right;
-  padding: 10px;
-  position: relative;
-  display: inline-block;
-  z-index: 13;
-  color: #191919;
-  font-size: 30px;
-}
-.tarjetita p {
-  font-size: 19px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: center;
-  line-height: 25px;
-}
-
-h3 {
-  margin-top: 60px;
-  margin-bottom: 30px;
-  font-size: 40px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: center;
-}
-
-.calendar {
-  margin-left: 30px;
-  text-align: center;
-  width: 30vw;
-  display: table-cell;
-}
-.calendar img {
-  max-width: 100%;
-}
-.calendar p {
-  font-size: 30px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
-}
-.calendar input {
-  width: 80%;
-  height: 25px;
-  margin: 3px;
-}
-
-ol {
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-}
-
-.first-day {
-  grid-column-start: 6;
-}
-
-.day-name {
-  background: #eee;
-  font-weight: bold;
-  text-align: center;
-}
-
-.contenedor {
-  width: 100%;
-  height: 250px;
-  display: flex;
-  justify-content: space-between;
-}
-
-/* main */
-.fototips {
-  width: 100%;
-  height: 370px;
-  display: flex;
-  justify-content: space-between;
-}
-.fototips img {
-  width: 100%;
-  object-fit: cover;
-}
-.fototips p {
-  font-size: 20px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+} 
 
 /*# sourceMappingURL=style.css.map */

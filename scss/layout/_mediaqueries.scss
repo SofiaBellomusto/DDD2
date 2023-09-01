@@ -240,6 +240,26 @@
         text-align: center;
     }
 
+        input {
+        width: 80%;
+        height: 25px;
+        margin: 3px;
+        }
+
+        button {
+        background: pink;
+        color: rgb(177, 45, 67);
+        border: none;
+        font-family: sans-serif;
+        padding: 0.25rem 2rem;
+        margin-bottom: 5px;
+        }
+
+        p {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 14px;
+        }
+
     .adress {
         display: none;
     }
