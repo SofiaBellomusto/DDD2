@@ -1,0 +1,51 @@
+.add-to-cart {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: fixed;
+    right: 30px;
+}
+
+.remove-from-cart {
+    background-color: #f44336; /* Red */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: fixed;
+    right: 30px;
+}
+
+.calculate-button {
+    background-color: #008CBA; /* Blue */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.product {
+    border: 1px solid #000; /* Black */
+    padding: 15px;
+}
+
+.product-image {
+    display: inline;
+    height: 100px;
+}
+
+.product-description {
+   color: #333; /* Dark Grey */
+   display: inline;
+}

@@ -19,6 +19,7 @@ function botonDeAgregar(producto){
 
         var boton =document.getElementById('boton'+producto);
         boton.innerHTML = 'Agregar al carrito';
+        boton.classList = 'add-to-cart'; //agregue para el color
 
 
 }
@@ -31,10 +32,10 @@ function botonDeAgregar(producto){
 //cambia el texto del boton
         var boton =document.getElementById('boton'+producto);
         boton.innerHTML = 'Eliminar del carrito';
+        boton.classList = 'remove-from-cart'; //agregue para el color
     }
     console.log(carrito)
 }
-
 
 
 function calcular() {

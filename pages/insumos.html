@@ -4,20 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DDD2</title>
+    <link rel="stylesheet" type="text/css" href="../css/stylesCarrito.css">
 </head>
 <body>
-    <div>
+    <div class="product">
         <h1>SPA DE MANOS</h1>
-        <button id="botonSpaDeManos" type="button" onclick="botonDeAgregar('SpaDeManos')">Agregar al carrito</button>
+        <img class="product-image" src="../assets/placeholder.png" alt="Product Image">
+        <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <button class="add-to-cart" id="botonSpaDeManos" type="button" onclick="botonDeAgregar('SpaDeManos')">Agregar al carrito</button>
     </div>
-    <div>
+    <br>
+    <div class="product">
         <h1>ACRILICOS</h1>
-        <button id="botonAcrilicos" type="button" onclick="botonDeAgregar('Acrilicos')">Agregar al carrito</button>
+        <img class="product-image" src="../assets/placeholder.png" alt="Product Image">
+        <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <button class="add-to-cart" id="botonAcrilicos" type="button" onclick="botonDeAgregar('Acrilicos')">Agregar al carrito</button>
     </div>
     <br>
     <br>
     <div style="text-align: center;">
-        <button  type="button" onclick="calcular()"><b>Calcular Total</b></button>
+        <button class="calculate-button" type="button" onclick="calcular()"><b>Calcular Total</b></button>
     </div>
 </body>
 <script src="../js/carrito.js"></script>
