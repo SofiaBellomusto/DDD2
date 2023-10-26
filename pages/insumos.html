@@ -7,24 +7,31 @@
     <link rel="stylesheet" type="text/css" href="../css/stylesCarrito.css">
 </head>
 <body>
-    <div class="product">
-        <h1>SPA DE MANOS</h1>
-        <img class="product-image" src="../assets/placeholder.png" alt="Product Image">
-        <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <button class="add-to-cart" id="botonSpaDeManos" type="button" onclick="botonDeAgregar('SpaDeManos')">Agregar al carrito</button>
-    </div>
-    <br>
-    <div class="product">
-        <h1>ACRILICOS</h1>
-        <img class="product-image" src="../assets/placeholder.png" alt="Product Image">
-        <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <button class="add-to-cart" id="botonAcrilicos" type="button" onclick="botonDeAgregar('Acrilicos')">Agregar al carrito</button>
-    </div>
-    <br>
+    <section id="catalogo">
+
+    </section>
     <br>
     <div style="text-align: center;">
-        <button class="calculate-button" type="button" onclick="calcular()"><b>Calcular Total</b></button>
+        <button class="calculate-button" type="button"><b id="Precio">Total $0</b></button>
     </div>
+
+
+
+    <form id="appointmentForm" class="cool-form">
+        <label for="appointmentDate" class="form-label">Fecha:</label>
+        <input type="date" id="appointmentDate" name="appointmentDate" required class="form-input">
+        
+        <label for="appointmentTime" class="form-label">Hora:</label>
+        <input type="time" id="appointmentTime" name="appointmentTime" required class="form-input">
+        
+        <input type="submit" value="Agendar cita" class="form-submit">
+    </form>
+    
+
+    
+
+
 </body>
 <script src="../js/carrito.js"></script>
+
 </html>

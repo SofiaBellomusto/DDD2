@@ -11,6 +11,20 @@
     right: 30px;
 }
 
+.add-to-cart:hover {
+    background-color: #55c459; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: fixed;
+    right: 30px;
+    cursor: pointer;
+}
+
 .remove-from-cart {
     background-color: #f44336; /* Red */
     border: none;
@@ -49,3 +63,57 @@
    color: #333; /* Dark Grey */
    display: inline;
 }
+
+
+.cool-form {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 300px;
+    margin: auto;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    margin-bottom: 20px;
+}
+
+.form-submit {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.form-submit:hover {
+    background-color: #0056b3;
+}
+
+.popup {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+}
+
+.popup.success {
+    background-color: #28a745;
+}
+
+.popup.error {
+    background-color: #dc3545;
+}
+
+
