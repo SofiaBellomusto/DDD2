@@ -7,21 +7,12 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    position: fixed;
     right: 30px;
+    margin-left: 80%;
 }
 
 .add-to-cart:hover {
     background-color: #55c459; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    position: fixed;
-    right: 30px;
     cursor: pointer;
 }
 
@@ -34,8 +25,8 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    position: fixed;
     right: 30px;
+    margin-left: 80%;
 }
 
 .calculate-button {
