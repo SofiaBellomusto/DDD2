@@ -29,6 +29,12 @@
     margin-left: 80%;
 }
 
+.remove-from-cart:hover {
+    background-color: #c8372c; /* Red */
+    cursor: pointer;
+
+}
+
 .calculate-button {
     background-color: #008CBA; /* Blue */
     border: none;
