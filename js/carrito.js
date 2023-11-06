@@ -127,58 +127,59 @@ function calcular() {
         });
         boton.innerHTML = 'Total $' + total;
         console.log("El total es: " + total)
-    }}
-
-    // Este objeto almacenará las citas
-
-
-    document.getElementById('appointmentForm').addEventListener('submit', function (event) {
-
-        var citas = JSON.parse(localStorage.getItem('citas')) || {};
-        console.log(citas);
-        // Evita que la página se recargue cuando se envía el formulario
-        event.preventDefault();
-        event.stopPropagation();
-    
-        var fecha = document.getElementById('appointmentDate').value;
-        var hora = document.getElementById('appointmentTime').value;
-    
-        // Combina la fecha y la hora en una sola cadena
-        var fechaHora = fecha + ' ' + hora;
-    
-        // Verifica si la fecha y hora ya están ocupadas
-        if (citas[fechaHora]) {
-            showPopup('Lo siento, esa hora ya está ocupada. Por favor, elige otra.', 'error');
-            return;
-        }
-    
-        // Usa un placeholder para el precio y los servicios,
-        // reemplaza esto con tus propias variables
-        var precio = 'total';
-        var servicios = 'carrito';
-    
-        // Guarda la cita en el objeto citas
-        citas[fechaHora] = {
-            precio: precio,
-            servicios: servicios
-        };
-    
-        // Guarda las citas en localStorage
-        localStorage.setItem('citas', JSON.stringify(citas));
-    
-        showPopup('¡Cita agendada con éxito!', 'success');
-    });
-    
-    function showPopup(message, type) {
-        var popup = document.createElement('div');
-        popup.className = 'popup ' + type;
-        popup.textContent = message;
-    
-        document.body.appendChild(popup);
-    
-        setTimeout(function() {
-            popup.remove();
-        }, 10000);
     }
-    
+}
+
+// Este objeto almacenará las citas
+
+
+document.getElementById('appointmentForm').addEventListener('submit', function (event) {
+
+    var citas = JSON.parse(localStorage.getItem('citas')) || {};
+    console.log(citas);
+    // Evita que la página se recargue cuando se envía el formulario
+    event.preventDefault();
+    event.stopPropagation();
+
+    var fecha = document.getElementById('appointmentDate').value;
+    var hora = document.getElementById('appointmentTime').value;
+
+    // Combina la fecha y la hora en una sola cadena
+    var fechaHora = fecha + ' ' + hora;
+
+    // Verifica si la fecha y hora ya están ocupadas
+    if (citas[fechaHora]) {
+        showPopup('Lo siento, esa hora ya está ocupada. Por favor, elige otra.', 'error');
+        return;
+    }
+
+    // Usa un placeholder para el precio y los servicios,
+    // reemplaza esto con tus propias variables
+    var precio = 'total';
+    var servicios = 'carrito';
+
+    // Guarda la cita en el objeto citas
+    citas[fechaHora] = {
+        precio: precio,
+        servicios: servicios
+    };
+
+    // Guarda las citas en localStorage
+    localStorage.setItem('citas', JSON.stringify(citas));
+
+    showPopup('¡Cita agendada con éxito!', 'success');
+});
+
+function showPopup(message, type) {
+    var popup = document.createElement('div');
+    popup.className = 'popup ' + type;
+    popup.textContent = message;
+
+    document.body.appendChild(popup);
+
+    setTimeout(function () {
+        popup.remove();
+    }, 10000);
+}
+
 
