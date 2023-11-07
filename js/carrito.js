@@ -104,6 +104,14 @@ function botonDeAgregar(productoId) {
     } else {
         console.log('El elemento no está en el array');
         carrito.push(productoId)
+         Swal.fire({
+            icon: "success",
+            title: "Servicio agregado exitosamente",
+            showConfirmButton: false,
+            timer: 1500
+          });
+
+
         var boton = document.getElementById('boton' + productoId);
         boton.innerHTML = 'Eliminar del carrito';
         boton.classList.remove('add-to-cart');
