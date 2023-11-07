@@ -104,12 +104,12 @@ function botonDeAgregar(productoId) {
     } else {
         console.log('El elemento no está en el array');
         carrito.push(productoId)
-         Swal.fire({
+        Swal.fire({
             icon: "success",
             title: "Servicio agregado exitosamente",
             showConfirmButton: false,
             timer: 1000
-          });
+        });
 
 
         var boton = document.getElementById('boton' + productoId);
