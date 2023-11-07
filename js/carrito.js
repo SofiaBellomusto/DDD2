@@ -108,7 +108,7 @@ function botonDeAgregar(productoId) {
             icon: "success",
             title: "Servicio agregado exitosamente",
             showConfirmButton: false,
-            timer: 1500
+            timer: 1000
           });
 
 
@@ -138,7 +138,7 @@ function calcular() {
     }
 }
 
-// Este objeto almacenará las citas
+// Este objeto almacena las citas
 
 
 document.getElementById('appointmentForm').addEventListener('submit', function (event) {
@@ -151,8 +151,6 @@ document.getElementById('appointmentForm').addEventListener('submit', function (
 
     var fecha = document.getElementById('appointmentDate').value;
     var hora = document.getElementById('appointmentTime').value;
-
-    // Combina la fecha y la hora en una sola cadena
     var fechaHora = fecha + ' ' + hora;
 
     // Verifica si la fecha y hora ya están ocupadas
@@ -162,9 +160,8 @@ document.getElementById('appointmentForm').addEventListener('submit', function (
     }
 
     // Usa un placeholder para el precio y los servicios,
-    // reemplaza esto con tus propias variables
-    var precio = 'total';
-    var servicios = 'carrito';
+    var precio = total;
+    var servicios = carrito;
 
     // Guarda la cita en el objeto citas
     citas[fechaHora] = {
