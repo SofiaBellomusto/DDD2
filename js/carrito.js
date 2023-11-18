@@ -1,52 +1,18 @@
 var carrito = [];
 var total = 0;
 
-var productos = {
-    Acrilicos: {
-        "Nombre": "Acrílicos",
-        "IdProducto": "Acrilicos",
-        "Precio": 1500,
-        "Descripcion": "Uñas esculpidas con acrílico de alta calidad y durabilidad",
-        "PhotoLink": "../assets/placeholder.png"
-    },
-    SpaDeManos: {
-        "Nombre": "Spa de Manos",
-        "IdProducto": "SpaDeManos",
-        "Precio": 1000,
-        "Descripcion": "Tratamiento hidratante y relajante para tus manos con exfoliación, masaje y esmaltado",
-        "PhotoLink": "../assets/placeholder.png"
-    },
-    Manicura: {
-        "Nombre": "Manicura",
-        "IdProducto": "Manicura",
-        "Precio": 900,
-        "Descripcion": "Corte, limado y pulido de uñas con esmalte tradicional o semipermanente",
-        "PhotoLink": "../assets/placeholder.png"
-    },
-    Pedicura: {
-        "Nombre": "Pedicura",
-        "IdProducto": "Pedicura",
-        "Precio": 1200,
-        "Descripcion": "Cuidado completo de tus pies con eliminación de durezas, corte y limado de uñas y esmaltado",
-        "PhotoLink": "../assets/placeholder.png"
-    },
-    Podologia: {
-        "Nombre": "Podología",
-        "IdProducto": "Podologia",
-        "Precio": 2000,
-        "Descripcion": "Consulta con un especialista en podología que te hará un diagnóstico y tratamiento de tus problemas podales",
-        "PhotoLink": "../assets/placeholder.png"
-    },
-    Gel: {
-        "Nombre": "Gel",
-        "IdProducto": "Gel",
-        "Precio": 1800,
-        "Descripcion": "Uñas esculpidas con gel de alta resistencia y brillo natural",
-        "PhotoLink": "../assets/placeholder.png"
-    }
-};
+
 
 window.onload = function () {
+
+    fetch('../js/productos.json')
+    .then(response => response.json())
+    .then(data => {
+        var productos = data;
+        // Now you can use your 'productos' object here
+    
+
+
     for (var productoId in productos) {
         var producto = productos[productoId];
 
@@ -87,6 +53,12 @@ window.onload = function () {
         var br = document.createElement('br');
         document.getElementById('catalogo').appendChild(br);
     }
+
+})
+.catch((error) => {
+    console.error('Error:', error);
+});
+
 };
 
 
